@@ -1,5 +1,9 @@
-import { getTime, sayHello } from './utils';
-import './global_styles.css'
+import React from 'react';
+import * as ReactDom from 'react-dom/client';
+import App from './App.jsx';
+import "./global_styles.css"
 
-sayHello();
-document.getElementById("app").innerHTML = getTime();
+const rootElement = document.getElementById('app');
+ 
+const root = ReactDom.createRoot(rootElement);
+root.render(<App />);
