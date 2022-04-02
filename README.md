@@ -8,6 +8,8 @@ A project built from scratch with webpack. Look at individual commits to underst
 
 ## Usage
 
-run `npm run build`. This will bundle the files in `./dist` folder in `index_bundle.js`
+run `npm run build` HTMLWebpackPlugin will use `./public/template.html` to create a bundle in the dist folder with. Open the index.html file to view the page.
+
+run `npm start`. This will serve the app using webpack-dev-server.
 
 Run the app by opening `index.html` in `./public` folder
