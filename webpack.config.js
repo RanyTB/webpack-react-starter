@@ -30,6 +30,7 @@ module.exports = {
           directory: path.join(__dirname, 'dist'),
         },
         port: 3000,
+        open: true,
       },
     devtool: 'source-map'
 }
