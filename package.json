@@ -1,0 +1,11 @@
+{
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "description": "A project built from scratch with webpack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rany Tarek Bouorm",
+  "license": "ISC"
+}
