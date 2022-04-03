@@ -1,10 +1,10 @@
 import React from 'react';
-import { getTime, sayHello } from "./utils"; 
+import { getTime, sayHello } from './utils';
 
 const App = () => {
-    sayHello();
+  sayHello();
 
-    return (<div>{ getTime() }</div>);
-}
+  return <div>{getTime()}</div>;
+};
 
 export default App;
