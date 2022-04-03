@@ -6,7 +6,8 @@ module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'index_bundle.js',
+    filename: '[name].[contenthash].bundle.js',
+    clean: true,
   },
   module: {
     rules: [
@@ -20,6 +21,9 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
+  },
+  resolve: {
+    extensions: ['.js', '.ts', '.tsx', '.json'],
   },
   plugins: [
     new HTMLWebpackPlugin({
