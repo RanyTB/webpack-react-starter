@@ -7,6 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[contenthash].bundle.js',
+    assetModuleFilename: 'assets/[name][ext][query]',
     clean: true,
   },
   module: {
@@ -18,13 +19,7 @@ module.exports = {
       },
       {
         test: /\.(svg|png|jpg|gif)$/i,
-        use: {
-          loader: 'file-loader',
-          options: {
-            name: '[name].[contenthash].[ext]',
-            outputPath: 'assets',
-          },
-        },
+        type: 'asset/resource',
       },
       {
         test: /\.css$/,
