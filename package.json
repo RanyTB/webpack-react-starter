@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter",
+  "name": "webpack-react-starter",
   "version": "1.0.0",
-  "description": "A project built from scratch with webpack",
+  "description": "A react project built from scratch with webpack",
   "main": "index.js",
   "scripts": {
     "start": "webpack serve",
