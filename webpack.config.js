@@ -17,6 +17,16 @@ module.exports = {
         exclude: /node_modules/,
       },
       {
+        test: /\.(svg|png|jpg|gif)$/i,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[contenthash].[ext]',
+            outputPath: 'assets',
+          },
+        },
+      },
+      {
         test: /\.css$/,
         use: ['style-loader', 'css-loader'],
       },
